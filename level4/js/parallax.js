@@ -57,6 +57,7 @@ const layer5 = new Layer(backgroundLayer5, 0.70);
 const layer6 = new Layer(backgroundLayer6, 0.70);
 const layer7 = new Layer(backgroundLayer7, 1.0);
  // speed relative to gameSpeed
+ // in this case, layers 3-6 are teh same speed, otherwise the pumpkins float off the shelves. 
 
 const gameObjects = [layer1, layer2, layer3, layer4, layer5, layer6, layer7];
 
