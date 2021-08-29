@@ -19,8 +19,6 @@ const backgroundLayer6 = new Image()
 backgroundLayer6.src = 'images/6.png'
 
 
-
-
 class Layer {
     constructor(image, speedModifier){
         this.width = 2400;

@@ -24,6 +24,7 @@ backgroundLayer8.src = 'images/8blue.png'
 const backgroundLayer9 = new Image()
 backgroundLayer9.src = 'images/9blue.png'
 
+// right to left 
 class Layer {
 	constructor(image, speedModifier){
 		this.x = 0;
