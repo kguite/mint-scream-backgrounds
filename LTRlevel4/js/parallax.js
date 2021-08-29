@@ -49,13 +49,13 @@ draw(){
 	}
 }
 
-const layer1 = new Layer(backgroundLayer1, 0.14);
-const layer2 = new Layer(backgroundLayer2, 0.28);
-const layer3 = new Layer(backgroundLayer3, 0.70);
-const layer4 = new Layer(backgroundLayer4, 0.70);
-const layer5 = new Layer(backgroundLayer5, 0.70);
-const layer6 = new Layer(backgroundLayer6, 0.70);
-const layer7 = new Layer(backgroundLayer7, 1.0);
+const layer1 = new Layer(backgroundLayer1, 0.13);
+const layer2 = new Layer(backgroundLayer2, 0.27);
+const layer3 = new Layer(backgroundLayer3, 0.69);
+const layer4 = new Layer(backgroundLayer4, 0.69);
+const layer5 = new Layer(backgroundLayer5, 0.69);
+const layer6 = new Layer(backgroundLayer6, 0.69);
+const layer7 = new Layer(backgroundLayer7, .98);
  // speed relative to gameSpeed
  // in this case, layers 3-6 are teh same speed, otherwise the pumpkins float off the shelves. 
 

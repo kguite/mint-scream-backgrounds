@@ -6,23 +6,23 @@ let gameSpeed = 2
 
 
 const backgroundLayer1 = new Image()
-backgroundLayer1.src = 'images/1blue.png';
+backgroundLayer1.src = 'images/1.png';
 const backgroundLayer2 = new Image()
-backgroundLayer2.src = 'images/2blue.png'
+backgroundLayer2.src = 'images/2.png'
 const backgroundLayer3 = new Image()
-backgroundLayer3.src = 'images/3blue.png'
+backgroundLayer3.src = 'images/3.png'
 const backgroundLayer4 = new Image()
-backgroundLayer4.src = 'images/4blue.png'
+backgroundLayer4.src = 'images/4.png'
 const backgroundLayer5 = new Image()
-backgroundLayer5.src = 'images/5blue.png'
+backgroundLayer5.src = 'images/5.png'
 const backgroundLayer6 = new Image()
-backgroundLayer6.src = 'images/6blue.png'
+backgroundLayer6.src = 'images/6.png'
 const backgroundLayer7 = new Image()
-backgroundLayer7.src = 'images/7blue.png'
+backgroundLayer7.src = 'images/7.png'
 const backgroundLayer8 = new Image()
-backgroundLayer8.src = 'images/8blue.png'
+backgroundLayer8.src = 'images/8.png'
 const backgroundLayer9 = new Image()
-backgroundLayer9.src = 'images/9blue.png'
+backgroundLayer9.src = 'images/9.png'
 
 // right to left 
 class Layer {
