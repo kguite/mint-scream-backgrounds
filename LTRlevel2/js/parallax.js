@@ -19,34 +19,32 @@ const backgroundLayer6 = new Image()
 backgroundLayer6.src = 'images/6.png'
 const backgroundLayer7 = new Image()
 
-
 class Layer {
-	constructor(image, speedModifier){
-		this.x = 0;
-		this.y = 0;
-		this.width = 1920;
-		this.height = 700; 
-		this.x2 = this.width;
-		this.image = image;
-		this.speedModifier = speedModifier;
-		this.speed = gameSpeed * this.speedModifier;
-		this.direction = 1
-	}
-	update(){
-		this.speed = gameSpeed * this.speedModifier;
-		if (this.x <= -this.width){
-			this.x = this.width + this.x2 - this.speed;
-		}
-		if (this.x2 <= -this.width){
-			this.x2 = this.width + this.x - this.speed;	
-	}
-	this.x = Math.floor(this.x - this.speed);
-	this.x2 = Math.floor(this.x2 - this.speed);
-}
-	draw(){
-		ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
-		ctx.drawImage(this.image, this.x2, this.y, this.width, this.height);
-	}
+    constructor(image, speedModifier){
+        this.width = 2400;
+        this.height = 700; 
+        this.x = -this.width;
+        this.y = 0;
+        this.x2 = this.width;
+        this.image = image;
+        this.speedModifier = speedModifier;
+        this.speed = gameSpeed * this.speedModifier;
+    }
+    update(){
+        this.speed = gameSpeed * this.speedModifier;
+        if (this.x >= this.width){
+            this.x = -this.width
+        }
+        if (this.x2 >= this.width){
+            this.x2 = -this.width - this.x + this.speed;    
+        }
+        this.x = Math.floor(this.x + this.speed);
+        this.x2 = Math.floor(this.x2 + this.speed);
+    }
+    draw(){
+        ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+        ctx.drawImage(this.image, this.x2, this.y, this.width, this.height);
+    }
 }
 
 const layer1 = new Layer(backgroundLayer1, 0.15);
