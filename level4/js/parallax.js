@@ -2,7 +2,7 @@ const canvas = document.getElementById('canvas1')
 const ctx = canvas.getContext('2d')
 const CANVAS_WIDTH = canvas.width = 800
 const CANVAS_HEIGHT = canvas.height = 700
-let gameSpeed = 2
+let gameSpeed = 6
 
 
 const backgroundLayer1 = new Image()
@@ -24,7 +24,7 @@ class Layer {
 	constructor(image, speedModifier){
 		this.x = 0;
 		this.y = 0;
-		this.width = 1920;
+		this.width = 1900;
 		this.height = 700; 
 		this.x2 = this.width;
 		this.image = image;
@@ -51,10 +51,10 @@ class Layer {
 
 const layer1 = new Layer(backgroundLayer1, 0.14);
 const layer2 = new Layer(backgroundLayer2, 0.28);
-const layer3 = new Layer(backgroundLayer3, 0.42);
-const layer4 = new Layer(backgroundLayer4, 0.56);
+const layer3 = new Layer(backgroundLayer3, 0.70);
+const layer4 = new Layer(backgroundLayer4, 0.70);
 const layer5 = new Layer(backgroundLayer5, 0.70);
-const layer6 = new Layer(backgroundLayer6, 0.84);
+const layer6 = new Layer(backgroundLayer6, 0.70);
 const layer7 = new Layer(backgroundLayer7, 1.0);
  // speed relative to gameSpeed
 
